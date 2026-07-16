@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
 set -e
+
 LOAD_BALANCER_IP="172.25.0.10" 
 
 echo "=== Starting iptables firewall configuration ==="
+
 echo "[1/6] Flushing old rules..."
 sudo iptables -F
 sudo iptables -X
